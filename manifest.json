@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Pizzuno Skin Maker",
+    "description": "It allows you to change the textures/colors of objects in the on pizz.uno",
+    "version": "1",
+    
+    "browser_action": {
+        "default_icon": "logo.png",
+        "default_title": "Pizzuno Skin Maker"
+        },
+    "content_scripts": [
+      {
+        "matches": ["https://pizz.uno/*"],
+        "js": ["changeTextures.js"]
+      }
+    ],
+    "permissions": [
+        "tabs", "https://pizz.uno/*"
+      ]
+  }
+  
